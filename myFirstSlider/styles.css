@@ -1,0 +1,47 @@
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 100%;
+    display: none;
+    border-radius: 20px;
+}
+
+img.displaySlide{
+    display: block;
+    animation-name: fade; /*используем ранее созданную анимку*/
+    animation-duration: 1.5s;
+}
+
+.slider button{
+    position: absolute; /*позиция элемента - кнопки
+    становится зависимой от позиции родителя -
+    всего слайдера - slader*/
+    top: 50%;
+    /*трансформ с транслейтY перемещает кнопку выше
+    на 50 процентов высоты элемента родителя*/
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 56%, 0.39);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.prevBtn{
+    left: 0;
+}
+.nextBtn{
+    right: 0;
+}
+
+/*Создаем свою анимацию для перехода слайдов*/
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 1}
+}

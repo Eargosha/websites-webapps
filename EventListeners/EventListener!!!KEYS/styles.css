@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+
+#myBox{
+    background-color: hsla(161, 49%, 78%, 0.767);
+    font-size: 7rem;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

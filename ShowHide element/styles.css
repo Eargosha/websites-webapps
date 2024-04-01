@@ -1,0 +1,11 @@
+#myBtn{
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+#myImg{
+    border: 2px solid hsl(36, 77%, 10%);
+    border-radius: 10px;
+}

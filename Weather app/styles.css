@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(hsla(209, 44%, 57%, 0.445), hsla(176, 60%, 90%, 0.521)),
+                url(./data/img/high-res-cloud-brushes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;
+    height: 100vh; */
+}
+
+.wheatherForm{
+    margin: 20px;
+}
+.cityInput{
+    border: 2px solid hsla(202, 87%, 36%, 0.473);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px;
+    width: 200px;
+}
+button[type="submit"]{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: hsla(122, 39%, 50%, 0.993);
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+button[type="submit"]:hover{
+    background-color: hsla(122, 39%, 40%, 0.993);
+}
+
+.card{
+    border-radius: 10px;
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 50px;
+    box-shadow: 4px 4px 10px hsla(0, 0%, 0%, 0.432);
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+p{
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+.cityDisplay, .tempDisplay{
+    font-size: 3rem;
+    font-weight: bold;
+    color: hsla(0, 20%, 1%, 0.829);
+}
+.tempDisplay{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.humidityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.descDisplay{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.wheatherEmoji{
+    margin: 0;
+    font-size: 7.5rem;
+}
+.errorDisplay{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: rgba(0, 0, 0, 0.842);
+}
