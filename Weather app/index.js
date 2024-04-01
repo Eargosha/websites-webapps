@@ -3,7 +3,7 @@
 const weatherForm = document.querySelector(".wheatherForm");
 const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
-const apiKey = "c56299817f7d97c8f05525f44007ad2d";
+const apiKey = "YOUR API KEY FROM OPENWEATHERMAP HERE"; //DONT FORGET TO ADD IT!!!!
 
 weatherForm.addEventListener("submit", async event => {
 
